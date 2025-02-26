@@ -43,16 +43,19 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 10vw;
+  color: black;
 }
 
 .chapter-title {
   top: 3%;
   font-size: 6vw;
+  color: black;
 }
 
 .subtitle {
   top: 10%;
   font-size: 4.5vw;
+  color: black;
 }
 
 .content {
@@ -60,25 +63,30 @@ html, body {
   left: 5%;
   width: 90%;
   font-size: 4vw;
+  color: black;
 }
 
 .holiday-title {
   top: 3%;
   font-size: 6vw;
+  color: #ff4081;
 }
 
 .holiday-message {
   font-size: 3.5vw;
   max-width: 90vw;
   margin-left: 5vw;
+  color: #f0f0f0;
 }
 
 .holiday-messagee {
   font-size: 6vw;
+  color: #00ff22;
 }
 
 .scroll-down {
   font-size: 4vw;
+  color: #f8bbd0;
 }
 
 @media (max-width: 768px) {
