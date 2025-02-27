@@ -60,11 +60,11 @@ html, body {
 .nav-btn {
   position: absolute;
   bottom: 0%;
-  padding: 10px 20px;
+  padding: 5px 15px;
   font-size: 15px;
   color: black;
   background: white;
-  border: 2px solid black;
+  border: 1px solid black;
   cursor: pointer;
 }
 
