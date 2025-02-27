@@ -71,9 +71,9 @@ html, body {
 
 .nav-btn {
   position: absolute;
-  bottom: 1%;
+  bottom: 0%;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 15px;
   color: black;
   background: white;
   border: 2px solid black;
