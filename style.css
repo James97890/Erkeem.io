@@ -61,6 +61,7 @@ html, body {
   background: white;
   z-index: 10;
   text-align: center;
+  padding: 2rem;
 }
 
 .page {
@@ -71,17 +72,17 @@ html, body {
   display: flex;
 }
 
+
 .nav-btn {
   position: absolute;
   bottom: 5%;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: black;
   background: white;
   border: 2px solid black;
   cursor: pointer;
 }
-
 #prevBtn, #prevBtn2, #prevBtn3 {
   left: 5%;
 }
@@ -98,14 +99,13 @@ html, body {
 }
 
 .title {
-  position: absolute;
-  top: 20%; /* Разместит заголовок сверху */
-  left: 50%;
-  transform: translateX(-50%);
   font-family: 'Rosarium', sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  text-align: center;
   color: black;
-  font-size: 85px;
-  margin-bottom: 20px;
+  max-width: 90%;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 @font-face {
@@ -116,15 +116,11 @@ html, body {
 }
 
 .chapter-title {
-    font-family: 'Trender', sans-serif;
-    color: black;
-    position: absolute;
-    top: 5%; /* Разместит заголовок сверху */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 32px;
-    margin-top: 0px;
+  font-family: 'Trender', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+  color: black;
+  max-width: 80%;
 }
 
 @font-face {
@@ -136,15 +132,10 @@ html, body {
 
 .subtitle {
   font-family: 'Uncage', sans-serif;
-    color: black;
-    position: absolute;
-    top: 12%; /* Чуть ниже заголовка */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-    width: 100%;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  text-align: center;
+  color: black;
+  max-width: 80%;
 }
 @font-face {
   font-family: 'Antique';
@@ -154,16 +145,12 @@ html, body {
 }
 .content {
   font-family: 'Antique', sans-serif;
+  font-size: clamp(1rem, 3vw, 2rem);
+  text-align: left;
   color: black;
-  position: absolute;
-  top: 18%; /* Чуть ниже "Пред история" */
-  left: 10%; /* Отступ слева */
-  width: 80%; /* Ограничиваем ширину */
-  font-size: 18px;
-  text-align: left; /* Выравнивание текста */
+  max-width: 80%;
   line-height: 1.5;
 }
-
 
 .section.appeared .section-content {
   opacity: 1;
@@ -185,16 +172,10 @@ html, body {
 
 /* Заголовок сверху */
 .holiday-title {
-  position: absolute;
-  top: 5%; /* Чуть ниже верхнего края */
-  left: 50%;
-  transform: translateX(-50%); /* Центрирование по горизонтали */
-  font-size: 4vw;
+  font-size: clamp(2rem, 5vw, 4rem);
   color: #ff4081;
-  font-weight: 600;
-  text-shadow: 0 0 10px rgba(212, 57, 109, 0.8), 0 0 20px rgba(212, 57, 109, 0.8);
   text-align: center;
-  width: 100%;
+  text-shadow: 0 0 10px rgba(212, 57, 109, 0.8), 0 0 20px rgba(212, 57, 109, 0.8);
 }
 
 @font-face {
@@ -206,35 +187,30 @@ html, body {
 
 /* Поздравительный текст */
 .holiday-message {
-  font-family: 'Bleeker', sans-serif;
-  font-size: 1.5vw;
-  color: #f0f0f0;
-  margin-top: 20px;
-  max-width: 80vw;
-  white-space: pre-line;
+  font-size: clamp(1rem, 3vw, 2rem);
   text-align: left;
-  margin-left: 10vw;
+  max-width: 80%;
+  white-space: pre-line;
 }
 
-.holiday-messagee{
-font-size: 4vw;
-color: #00ff22;
-font-weight: 600;
-text-shadow: 0 0 10px rgba(112, 242, 52, 0.8), 0 0 20px rgba(112, 242, 52, 0.8);
-text-align: center;
-width: 100%;
+.holiday-messagee {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: #00ff22;
+  text-shadow: 0 0 10px rgba(112, 242, 52, 0.8), 0 0 20px rgba(112, 242, 52, 0.8);
+  text-align: center;
+  width: 100%;
 }
 
 
 /* «Листай ниже» */
 .scroll-down {
-  margin-top: 30px;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   cursor: pointer;
   animation: bounceArrow 1.5s infinite;
   transition: opacity 0.3s;
   color: #f8bbd0;
 }
+
 .scroll-down:hover {
   opacity: 0.75;
 }
