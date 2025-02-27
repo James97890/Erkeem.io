@@ -204,11 +204,11 @@ html, body {
 
 .holiday-message {
   position: absolute;
-  top: 50%; /* По центру */
+  top: 35%; /* По центру */
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Bleeker', sans-serif;
-  font-size: 1.8vw;
+  font-size: 3vw;
   color: #f0f0f0;
   max-width: 80%;
   white-space: pre-line;
