@@ -184,15 +184,15 @@ html, body {
 
 .holiday-title {
   position: absolute;
-  top: 5%;
-  left: 50%;
+  top: 15%; /* Разместить в верхней части */
+  left: 45%; /* Чуть левее центра */
   transform: translateX(-50%);
   font-size: 4vw;
   color: #ff4081;
   font-weight: 600;
   text-shadow: 0 0 10px rgba(212, 57, 109, 0.8), 0 0 20px rgba(212, 57, 109, 0.8);
   text-align: center;
-  width: 100%;
+  max-width: 90%;
 }
 
 @font-face {
@@ -203,17 +203,23 @@ html, body {
 }
 
 .holiday-message {
+  position: absolute;
+  top: 50%; /* По центру */
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: 'Bleeker', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   color: #f0f0f0;
-  margin-top: 20px;
-  max-width: 80vw;
+  max-width: 80%;
   white-space: pre-line;
   text-align: left;
-  margin-left: 10vw;
 }
 
-.holiday-messagee{
+.holiday-messagee {
+  position: absolute;
+  bottom: 10%; /* Чуть выше нижнего края */
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 4vw;
   color: #00ff22;
   font-weight: 600;
